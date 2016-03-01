@@ -1,4 +1,5 @@
 ﻿using eCommerce.Models.Components.Contracts;
+using eCommerce.Models.Components.Core.DatabaseConfigurations;
 using eCommerce.Models.Shared.Contracts;
 using eCommerce.Models.Shared.Core;
 using System;
@@ -23,5 +24,7 @@ namespace eCommerce.Models.Components.Core
         public virtual Script Script { get; set; }
         public virtual Style Style { get; set; }
         public virtual IEnumerable<Theme> Themes { get; set; }
+        public ComponentType ComponentType { get; set; }
+        public DatabaseConfiguration DatabaseConfigurations { get; set; }
     }
 }

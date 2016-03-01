@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>eCommerce.Models.Components</RootNamespace>
     <AssemblyName>eCommerce.Models.Components</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,12 +43,22 @@
     <Compile Include="Contracts\IComponent.cs" />
     <Compile Include="Contracts\IRazorComponent.cs" />
     <Compile Include="Core\Component.cs" />
+    <Compile Include="Core\ComponentType.cs" />
+    <Compile Include="Core\DatabaseConfigurations\DatabaseConfiguration.cs" />
+    <Compile Include="Core\DatabaseConfigurations\OrderByStatement.cs" />
+    <Compile Include="Core\DatabaseConfigurations\SelectStatement.cs" />
+    <Compile Include="Core\DatabaseConfigurations\ThenByStatement.cs" />
+    <Compile Include="Core\DatabaseConfigurations\WhereStatement.cs" />
     <Compile Include="Core\Script.cs" />
     <Compile Include="Core\Style.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\DynamicLINQ.Configurations\DynamicLINQ.Configurations.csproj">
+      <Project>{ba5c961e-123c-4d68-afda-b3add2b1d999}</Project>
+      <Name>DynamicLINQ.Configurations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eCommerce.Models.Shared\eCommerce.Models.Shared.csproj">
       <Project>{3107d5b3-a1c5-4727-a840-73b31f235d43}</Project>
       <Name>eCommerce.Models.Shared</Name>
