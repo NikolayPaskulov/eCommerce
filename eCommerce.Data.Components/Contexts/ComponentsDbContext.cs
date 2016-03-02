@@ -11,7 +11,7 @@ namespace eCommerce.Data.Components.Contexts
     public class ComponentsDbContext : DbContext
     {
         public ComponentsDbContext()
-            : base("ComponentsConnection", throwIfV1Schema: false)
+            : base("ComponentsConnection")
         {
         }
 

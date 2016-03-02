@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace eCommerce.Models.Components.Core.DatabaseConfigurations
 {
-    public class DatabaseConfiguration : IDatabaseEntity, IDynamicModelConfiguration
+    public class DatabaseConfiguration : IDatabaseEntity
     {
         public DatabaseConfiguration()
         {
